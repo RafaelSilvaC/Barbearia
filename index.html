@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gui Cortes</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Gui Cortes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Início <span class="visually-hidden">(atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicos">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#galeria">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="imagem-fundo">
+            <h1 id="titulo" class="text-center p-5">Gui Cortes</h1>
+            <p id="slogan" class="text-center">Seu Visual, Nossa Arte</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="servicos" class="py-5">
+            <div class="container">
+                <h2 class="text-center">Nossos Serviços</h2>
+                <table class="table table-bordered text-center">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Serviço</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cabelo e Sombracelha</td>
+                            <td>R$ 15,00</td>
+                        </tr>
+                        <tr>
+                            <td>Cabelo e Barba</td>
+                            <td>R$ 20,00</td>
+                        </tr>
+                        <tr>
+                            <td>Barba e Bigode</td>
+                            <td>R$ 6,00</td>
+                        </tr>
+                        <tr>
+                            <td>Sombracelha</td>
+                            <td>R$ 3,00</td>
+                        </tr>
+                        <tr>
+                            <td>Pigmentação</td>
+                            <td>R$ 5,00</td>
+                        </tr>
+                        <tr>
+                            <td>Coloração</td>
+                            <td> A combinar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-center mt-4">
+                <a href="https://api.whatsapp.com/send/?phone=5575983417135&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-primary" aria-label="Agendar Atendimento">Agendar Atendimento</a>
+            </div>
+        </section>
+        
+        <section id="galeria" class="py-5">
+            <div class="container">
+                <h2 class="text-center">Galeria</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img/foto-1.webp" class="img-fluid mb-4" alt="Corte de cabelo moderno" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/foto-2.webp" class="img-fluid mb-4" alt="Estilo de barba" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/foto-3.jpg" class="img-fluid mb-4" alt="Transformação de visual" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/foto-4.jpg" class="img-fluid mb-4" alt="Transformação de visual" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/foto-5.webp" class="img-fluid mb-4" alt="Transformação de visual" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/foto-6.webp" class="img-fluid mb-4" alt="Transformação de visual" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="https://api.whatsapp.com/send/?phone=5575983417135&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-primary" aria-label="Agendar Atendimento">Agendar Atendimento</a>
+            </div>
+        </section>
+
+        <section id="contato" class="py-5">
+            <div class="container">
+                <h2 class="text-center">Entre em Contato</h2>
+                <form action="#" method="post">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required aria-label="Nome">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required aria-label="Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required aria-label="Mensagem"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" aria-label="Enviar Mensagem">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-4 text-white">
+        <p>&copy; 2024 Desenvolvido por Rafael da Silva Conceição</p>
+        <p><strong>Endereço:</strong> R. Pedro Martins - Bento Simões, Irará - BA, 44255-000</p>
+        <p><strong>Horário de Funcionamento:</strong></p>
+        <p>Segunda a Sexta: 13h - 19h</p>
+        <p>Sábado: 6h - 19h</p>
+        <p>Domingo: Fechado</p>
+        <ul class="social-icons d-flex justify-content-center mt-3">
+            <li>
+                <a href="https://www.instagram.com/gui_cortes075/" target="_blank" aria-label="Instagram">
+                    <img src="img/instagram-icon.webp" alt="Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="https://api.whatsapp.com/send/?phone=5575983417135&text&type=phone_number&app_absent=0" target="_blank" aria-label="WhatsApp">
+                    <img src="img/whatsapp-icon.webp" alt="WhatsApp">
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-So+D8nTL+Y08k6nG/u/NZQllW70g2Sft9/4QaJkWf6/s7Ye5H5puHTdTF5h8yAAc" crossorigin="anonymous"></script>
+</body>
+</html>

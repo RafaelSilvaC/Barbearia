@@ -1,0 +1,178 @@
+:root {
+    --primary-color: rgb(212, 113, 0);
+    --secondary-color: rgb(50, 50, 50);
+    --text-color: rgb(255, 255, 255);
+    --hover-color: rgba(212, 113, 0, 0.8); /* Cor para hover */
+    --background-color: #f8f9fa; /* Cor de fundo padrão */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garantir que padding e border não afetem o layout */
+}
+
+body {
+    background-color: var(--background-color); /* Cor de fundo do body */
+}
+
+nav {
+    background-color: var(--primary-color);
+}
+
+.imagem-fundo {
+    background-image: url(img/imagemFundo.jpg);
+    background-size: cover;
+    background-position: center center; /* Ajusta a imagem para cobrir todo o fundo */
+    height: 400px;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .imagem-fundo {
+        height: 300px;
+    }
+    #servicos, #galeria, #contato {
+        padding: 20px 0; /* Ajusta o padding em telas menores */
+    }
+    .navbar-nav {
+        flex-direction: column; /* Empilha os itens da navbar em telas menores */
+    }
+}
+
+.navbar-nav {
+    margin: auto;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-color);
+    font-size: 1.1rem; /* Tamanho de texto maior para melhor legibilidade */
+    padding: 10px 15px; /* Adiciona padding para melhorar a interação */
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    color: var(--hover-color); 
+    transform: scale(1.05);
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: auto;
+    margin-top: 5px;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
+    transform: scale(1.2); /* Aumenta o tamanho na interação */
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 30px 0; /* Adiciona mais padding para melhorar o espaçamento */
+    color: var(--text-color);
+}
+
+footer p {
+    margin-bottom: 5px; /* Reduz a margem para um layout mais limpo */
+}
+
+#galeria {
+    background-color: rgba(212, 113, 0, 0.1);
+    padding: 40px 0;
+}
+
+#galeria h2 {
+    color: var(--primary-color); 
+}
+
+#galeria .img-fluid {
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+#galeria .img-fluid:hover {
+    transform: scale(1.05); /* Efeito de zoom suave ao passar o mouse */
+}
+
+.btn {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+#servicos .table {
+    background-color: #fff; /* Cor de fundo branco para a tabela */
+    border-radius: 8px; /* Bordas arredondadas para combinar com o resto do design */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+}
+
+#servicos .table th, 
+#servicos .table td {
+    padding: 15px; /* Espaçamento interno para maior legibilidade */
+    text-align: center; /* Alinhamento centralizado para as células */
+}
+
+#servicos .table thead {
+    background-color: var(--primary-color); /* Cor de fundo para o cabeçalho da tabela */
+    color: var(--text-color); /* Cor do texto do cabeçalho */
+    font-weight: bold; /* Deixa o texto do cabeçalho em negrito */
+}
+
+#servicos .table tbody tr {
+    transition: background-color 0.3s ease; /* Transição suave para alteração de cor */
+}
+
+#servicos .table tbody tr:hover {
+    background-color: rgba(212, 113, 0, 0.1); /* Cor de fundo suave quando passar o mouse */
+}
+
+#servicos .btn-primary {
+    background-color: var(--primary-color); /* Cor do botão igual à cor primária do site */
+    border-color: var(--primary-color); /* Cor da borda do botão */
+    padding: 10px 20px; /* Tamanho confortável para o botão */
+    font-size: 1.1rem; /* Fonte do botão mais legível */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+}
+
+#servicos .btn-primary:hover {
+    background-color: var(--hover-color); /* Cor de hover do botão */
+    transform: scale(1.05); /* Aumenta o botão suavemente */
+}
+
+#galeria .btn-primary {
+    background-color: var(--primary-color); /* Cor do botão igual à cor primária do site */
+    border-color: var(--primary-color); /* Cor da borda do botão */
+    padding: 10px 20px; /* Tamanho confortável para o botão */
+    font-size: 1.1rem; /* Fonte do botão mais legível */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+}
+
+#galeria .btn-primary:hover {
+    background-color: var(--hover-color); /* Cor de hover do botão */
+    transform: scale(1.05); /* Aumenta o botão suavemente */
+}
+
